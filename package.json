@@ -1,0 +1,27 @@
+{
+  "name": "vikunja-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:mobile": "npx playwright test --project='Mobile Safari'",
+    "report": "npx allure serve allure-results",
+    "lint": "eslint . --ext .ts",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.4.0",
+    "@types/pg": "^8.18.0",
+    "allure-playwright": "^3.6.0",
+    "pg": "^8.20.0",
+    "typescript": "^5.9.3"
+  }
+}
