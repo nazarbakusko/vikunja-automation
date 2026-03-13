@@ -1,4 +1,3 @@
-
 # Playwright
 node_modules/
 /test-results/
@@ -9,3 +8,9 @@ node_modules/
 playwright/.local-browsers/
 build/
 .env
+
+# Allure reports and results
+allure-results/
+allure-report/
+playwright-report/
+test-results/
